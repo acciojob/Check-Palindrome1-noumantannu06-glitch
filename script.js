@@ -2,9 +2,9 @@
 
 function palindrome(str){
 	// Remove all non-alphanumeric characters and convert to lowercase
-  const cleaned = s.replace(/[^a-z0-9]/gi, '').toLowerCase();
+  const cleaned = str.toLowerCase().replace(/[^a-z0-9]/g, '');
   
-  // Create reversed string
+  // Reverse the cleaned string
   const reversed = cleaned.split('').reverse().join('');
   
   // Check if cleaned string equals reversed string
